@@ -20,7 +20,7 @@ button {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;u
 function tuopa() {document.getElementById("liuying").style.display = "block";} // 菜单打开
 function buruoniya() {document.getElementById("liuying").style.display = "none";} // 菜单关闭
 function guinaifen() {var url = document.getElementById("hanya").value;document.getElementById("iframe").src = url;} // 网址访问/刷新
-function huahuo() {scroll(0,0);} // 返回顶部
+function huahuo() {document.body.scrollTop = 0;document.documentElement.scrollTop = 0;} // 返回顶部
 window.onload = function() {tuopa();} // 让页面加载时展开菜单
 console.log("如果你看到了这行文字，说明你发现了那个浏览器的秘密\n其实就是调用了系统webwiew渲染了这个页面\n变量名来自游戏《崩坏：星穹铁道》中的角色名\n米沙=misha，流萤=liuying，停云=tingyun，花火=huahuo，寒鸦=hanya，雪衣=xueyi，布洛妮娅=buruoniya，知更鸟=zhigengniao，桂乃芬=guinaifen，托帕=tuopa"); // 彩蛋
 </script></body></html>
