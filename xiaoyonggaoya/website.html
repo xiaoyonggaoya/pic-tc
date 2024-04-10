@@ -2,19 +2,20 @@
 body{margin:0;padding:0}
 #misha {position: fixed;top: 10px;right: 10px;width: 80px;height: 40px;background-color: #88888899;border: none;font-size: 20px;border-radius:8px;} // 打开菜单按钮
 #liuying {position: fixed;top: 60px;right: 10px;width: 300px;height: 230px;background-color: #ffffff99;border: 1px solid black;display: none;border-radius:4px;} // 界面
-#wangzhi {margin: 10px;width: 280px;border-radius:3px;} // 网址栏
+#hanya {margin: 10px;width: 280px;border-radius:3px;} // 网址栏
 #tingyun {margin: 10px;width: 80px;height: 40px;background-color: #00FF9999;border: none;border-radius:8px;} // 访问/刷新按钮
 #zhigengniao {margin: 10px;width: 80px;height: 40px;background-color: #FF000099;border: none;border-radius:8px;} // 关闭菜单按钮
 #iframe {width: 100%;height: 100%;border: none;} // iframe自适应全屏
 div {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 button {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 </style><base target="_self"></head><body>
-<button id="misha" onclick="yuanshenqidong()">打开菜单</button><div id="liuying">
+<button id="misha" onclick="tuopa()">打开菜单</button><div id="liuying">
 <div>请在下面框中输入网址以访问网站</div>
-<input id="wangzhi" type="text" placeholder="输入网址以访问网站" value="https://cn.bing.com"><button id="tingyun" onclick="guinaifen()">访问/刷新</button><button id="zhigengniao" onclick="niganmaaiyo()">关闭菜单</button></div>
+<input id="hanya" type="text" placeholder="输入网址以访问网站" value="https://cn.bing.com"><button id="tingyun" onclick="guinaifen()">访问/刷新</button><button id="zhigengniao" onclick="buruoniya()">关闭菜单</button></div>
 <iframe id="iframe" src="https://cn.bing.com"></iframe><script>
-function yuanshenqidong() {document.getElementById("liuying").style.display = "block";} // 菜单打开
-function niganmaaiyo() {document.getElementById("liuying").style.display = "none";} // 菜单关闭
-function guinaifen() {var url = document.getElementById("wangzhi").value;document.getElementById("iframe").src = url;} // 网址访问/刷新
-window.onload = function() {yuanshenqidong();} // 让页面加载时展开菜单
+function tuopa() {document.getElementById("liuying").style.display = "block";} // 菜单打开
+function buruoniya() {document.getElementById("liuying").style.display = "none";} // 菜单关闭
+function guinaifen() {var url = document.getElementById("hanya").value;document.getElementById("iframe").src = url;} // 网址访问/刷新
+window.onload = function() {tuopa();} // 让页面加载时展开菜单
+console.log("如果你看到了这行文字，说明你发现了那个浏览器的秘密\n其实就是调用了系统webwiew渲染了这个页面\n变量名来自游戏《崩坏：星穹铁道》中的角色名\n米沙=misha，流萤=liuying，停云=tingyun，寒鸦=hanya，布洛妮娅=buruoniya，知更鸟=zhigengniao，桂乃芬=guinaifen，托帕=tuopa"); // 彩蛋
 </script></body></html>
