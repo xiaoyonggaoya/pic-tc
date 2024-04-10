@@ -1,15 +1,15 @@
 <html><head><title>网页浏览器</title><style>
 body{margin:0;padding:0}
-#misha {position: fixed;top: 10px;right: 10px;width: 80px;height: 40px;background-color: #88888899;border: none;font-size: 20px;border-radius:8px;} // 打开菜单按钮
-#liuying {position: fixed;top: 60px;right: 10px;width: 300px;height: 230px;background-color: #ffffff99;border: 1px solid black;display: none;border-radius:4px;} // 界面
-#hanya {margin: 10px;width: 280px;border-radius:3px;} // 网址栏
-#tingyun {margin: 10px;width: 80px;height: 40px;background-color: #00FF9999;border: none;border-radius:8px;} // 访问/刷新按钮
-#zhigengniao {margin: 10px;width: 80px;height: 40px;background-color: #FF000099;border: none;border-radius:8px;} // 关闭菜单按钮
-#iframe {width: 100%;height: 100%;border: none;} // iframe自适应全屏
+#misha {position: fixed;top: 10px;right: 10px;width: 80px;height: 40px;background-color: #88888899;border: none;font-size: 20px;border-radius:8px;} /* 打开菜单按钮 */
+#liuying {position: fixed;top: 60px;right: 10px;width: 300px;height: 230px;background-color: #ffffff99;border: 1px solid black;display: none;border-radius:4px;} /* 界面 */
+#hanya {margin: 10px;width: 280px;border-radius:3px;} /* 网址栏 */
+#tingyun {margin: 10px;width: 80px;height: 40px;background-color: #00FF9999;border: none;border-radius:8px;} /* 访问/刷新按钮 */
+#zhigengniao {margin: 10px;width: 80px;height: 40px;background-color: #FF000099;border: none;border-radius:8px;} /* 关闭菜单按钮 */
+#iframe {width: 100%;height: 100%;border: none;} /* iframe自适应全屏 */
 div {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 button {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 </style><base target="_self"></head><body>
-<button id="misha" onclick="tuopa()">打开菜单</button><div id="liuying">
+<button id="misha" onclick="tuopa()">菜单</button><div id="liuying">
 <div>请在下面框中输入网址以访问网站</div>
 <input id="hanya" type="text" placeholder="输入网址以访问网站" value="https://cn.bing.com"><button id="tingyun" onclick="guinaifen()">访问/刷新</button><button id="zhigengniao" onclick="buruoniya()">关闭菜单</button></div>
 <iframe id="iframe" src="https://cn.bing.com"></iframe><script>
