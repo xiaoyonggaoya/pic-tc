@@ -11,10 +11,10 @@ button {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;u
 </style><base target="_self"></head><body>
 <button id="misha" onclick="tuopa()">菜单</button><div id="liuying">
 <div>请在下面框中输入网址以访问网站</div>
-<input id="hanya" type="text" placeholder="输入网址以访问网站" value="https://cn.bing.com">
+<input id="hanya" type="text" placeholder="输入网址以访问网站" value="https://www.bing.com">
 <button id="tingyun" onclick="guinaifen()">访问/刷新</button>
 <button id="zhigengniao" onclick="buruoniya()">关闭菜单</button>
-</div><iframe id="iframe" src="https://cn.bing.com"></iframe><script>
+</div><iframe id="iframe" src="https://www.bing.com"></iframe><script>
 function tuopa() {document.getElementById("liuying").style.display = "block";} // 菜单打开
 function buruoniya() {document.getElementById("liuying").style.display = "none";} // 菜单关闭
 function guinaifen() {var url = document.getElementById("hanya").value;document.getElementById("iframe").src = url;} // 网址访问/刷新
